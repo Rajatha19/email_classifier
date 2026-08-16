@@ -29,6 +29,7 @@ export interface LogItem extends ClassifyResponse {
   latency_ms?: number | null;
   status?: string | null;
   error?: string | null;
+  extra?: ClassifyResponse["extra"];
 }
 async function parseJSON(res: Response) {
   const text = await res.text();
