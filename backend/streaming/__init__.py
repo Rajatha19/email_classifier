@@ -1,0 +1,1 @@
+"""Kafka streaming inference adapters."""

@@ -1,0 +1,83 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+env/
+ENV/
+.venv
+
+# Backend specific
+backend/venv/
+backend/.env
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/logs/
+
+# Large data files
+*.csv
+phishing_email.csv
+
+# Node
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build
+frontend/dist
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output
+.coverage
+.pytest_cache/
+htmlcov/

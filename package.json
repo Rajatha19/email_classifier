@@ -1,0 +1,27 @@
+{
+  "name": "email-classifier-monorepo",
+  "version": "1.0.0",
+  "description": "Full stack email classifier with FastAPI backend and Next.js frontend",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" --names \"backend,frontend\" --prefix-colors \"blue,magenta\"",
+    "dev:backend": "cd backend && . venv/bin/activate && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:backend": "cd backend && python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "email-classifier",
+    "fastapi",
+    "nextjs",
+    "ai",
+    "monorepo"
+  ],
+  "author": "basantiroomie",
+  "license": "MIT"
+}

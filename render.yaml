@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: emailclassifier-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: USE_ML_MODEL
+        value: "true"
+      - key: ALLOW_ORIGINS
+        value: "*"
