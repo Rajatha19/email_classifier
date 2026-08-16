@@ -15,7 +15,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt pytest
       - run: python -m compileall app training streaming
-      - run: pytest tests
+      - run: PYTHONPATH=. python -m pytest tests
   frontend:
     runs-on: ubuntu-latest
     defaults:
